@@ -1,0 +1,22 @@
+.cards {
+  padding: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  &-item {
+    position: relative;
+    border: solid;
+    width: 240px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px;
+    .delete-icon {
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
