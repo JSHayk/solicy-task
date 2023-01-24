@@ -1,27 +1,21 @@
-import { useState } from "react";
+import { memo } from "react";
 // Sections
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Cards from "../components/Cards";
+import Aside from "../components/Aside";
 
 const Layout = () => {
-  const [cards, setCards] = useState([
-    {
-      id: Date.now(),
-      number: 8,
-    },
-    {
-      id: Date.now(),
-      number: 45,
-    },
-  ]);
   return (
     <>
-      <Header setCards={setCards} />
-      <Cards cards={cards} />
-      <Footer />
+      <div className="content">
+        <Header />
+        <Cards />
+        <Footer />
+      </div>
+      <Aside />
     </>
   );
 };
 
-export default Layout;
+export default memo(Layout);

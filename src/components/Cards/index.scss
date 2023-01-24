@@ -1,10 +1,15 @@
 .cards {
+  overflow: auto;
+  height: 100%;
   padding: 28px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   &-item {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
     position: relative;
-    border: solid;
+    border-radius: 6px;
     width: 240px;
     height: 200px;
     display: flex;
@@ -13,8 +18,8 @@
     margin: 18px;
     .delete-icon {
       position: absolute;
-      right: 2px;
-      top: 2px;
+      right: 4px;
+      top: 6px;
       font-size: 24px;
       cursor: pointer;
     }
